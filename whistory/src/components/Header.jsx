@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserLock } from '@fortawesome/free-regular-svg-icons';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
     <Wrapper>
-      <LockIcon icon={faUserLock} />
+      <LockIcon icon={faLock} />
       비밀 시청 기록
     </Wrapper>
   );
@@ -26,4 +26,6 @@ const Wrapper = styled.div`
   padding-left: 30px;
 `;
 
-const LockIcon = styled(FontAwesomeIcon)``;
+const LockIcon = styled(FontAwesomeIcon)`
+  margin-right: 10px;
+`;
